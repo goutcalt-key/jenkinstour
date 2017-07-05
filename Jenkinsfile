@@ -4,15 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn --version'
-		sh 'docker info'
+                sh 'docker info'
             }
         }
-    }
-    post{
-	always {
-	    junit 'build/reports/**/*.xml
-	}
     }
 
 }
