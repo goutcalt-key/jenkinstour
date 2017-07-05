@@ -8,5 +8,10 @@ pipeline {
             }
         }
     }
+    post {
+	always {
+		echo 'TEEESTING'
+	}
+    }	
 
 }
