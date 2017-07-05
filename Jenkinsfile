@@ -8,4 +8,10 @@ pipeline {
             }
         }
     }
+    post{
+	always { 
+		echo "this is a test"
+	}
+    }
+
 }
